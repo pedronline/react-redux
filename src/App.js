@@ -1,12 +1,20 @@
-import React from 'react';
-import Ninjas from './components/Ninjas';
+import React, { Component } from 'react';
+import NinjasList from './components/NinjasList';
 
-function App() {
-  return (
-    <>
-      <Ninjas name="Pedro" age="28" />
-    </>
-  );
+class App extends Component {
+  state = {
+    ninjas: [
+      { id: 1, name: 'Pedro', age: '28' },
+      { id: 2, name: 'Ninja', age: '20' }
+    ]
+  };
+  render() {
+    return (
+      <>
+        <NinjasList ninjas={this.state.ninjas} />
+      </>
+    );
+  }
 }
 
 export default App;
