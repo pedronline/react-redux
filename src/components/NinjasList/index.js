@@ -2,8 +2,6 @@ import React from 'react';
 
 import './style.css';
 
-// import { Container } from './styles';
-
 export default function NinjasList({ ninjas }) {
   const ninjaList = ninjas.map(ninja => {
     return (
