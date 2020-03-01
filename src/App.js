@@ -1,10 +1,11 @@
 import React from 'react';
+import Ninjas from './components/Ninjas';
 
 function App() {
   return (
-    <div className="ninja">
-      <h1>Pedro Ninja</h1>
-    </div>
+    <>
+      <Ninjas name="Pedro" age="28" />
+    </>
   );
 }
 
