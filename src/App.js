@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NinjasList from './components/NinjasList';
 import Counter from './components/Counter';
+import NinjaForm from './components/NinjaForm';
 
 class App extends Component {
   state = {
@@ -14,6 +15,7 @@ class App extends Component {
       <>
         <NinjasList ninjas={this.state.ninjas} />
         <Counter />
+        <NinjaForm />
       </>
     );
   }

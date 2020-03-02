@@ -8,6 +8,9 @@ export default function NinjasList({ ninjas }) {
       <div className="ninja" key={ninja.id}>
         <div>Name: {ninja.name}</div>
         <div>Age: {ninja.age}</div>
+        <div>
+          <p>{ninja.age > 25 ? 'maior de 25' : 'Oops'}</p>
+        </div>
       </div>
     );
   });
